@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated | Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-form">
+        <!-- header  -->
+        <div class="header">
+          <h1 class="logo">LOGO</h1>
+          <div class="enroll">
+            <span>Are you a new customer?</span>
+            <button id="enrollButton">
+              Enroll Now
+              <div class="dropdown">
+                <p>Enroll now to:</p>
+                <ul>
+                  <li>Access your loans online</li>
+                  <li>Pay your mortgage payment online</li>
+                  <li>View your mortgage statements</li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </div>
+        <!-- Form starts here -->
+        <div class="form-section">
+          <h2>Welcome back</h2>
+          <p>Sign in to your account</p>
+          <form id="loginForm">
+            <div class="input-container">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder=" "
+                required
+              />
+              <label for="username">Online ID</label>
+            </div>
+            <div class="input-container">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder=" "
+                required
+              />
+              <label for="password">Password</label>
+              <button
+                type="button"
+                id="togglePassword"
+                class="show-password-button"
+              >
+                Show
+              </button>
+            </div>
+            <div class="input-container checkbox-container">
+              <input type="checkbox" id="remember" name="remember" />
+              <label for="remember" class="checkbox-label">Remember me</label>
+            </div>
+
+            <button id="loginButton" type="submit">
+              <span class="button-text">Login</span>
+              <div class="loading-circle"></div>
+            </button>
+            <div class="links">
+              <a href="#" id="forgotId">Forgot ID?</a>
+              <a href="#" id="forgotPassword">Forgot Password?</a>
+            </div>
+          </form>
+        </div>
+        <footer>
+          <span>Equal Housing Lender Member FDIC </span> <br />
+          &copy; 2024 Regions Financial Corporation. All rights reserved.
+          1-800-REGIONS
+        </footer>
+      </div>
+      <!--  Image section -->
+      <div class="image-section">
+        <img
+          src="https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg"
+          alt="Login Image"
+        />
+      </div>
+    </div>
+    <script src="vanilla.js"></script>
+  </body>
+</html>

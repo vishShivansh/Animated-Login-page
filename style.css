@@ -1,0 +1,409 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-form {
+  flex: 1;
+  background-color: white;
+  box-sizing: border-box;
+  margin: 20px;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Keyframe for sliding in from the left */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes logo-move {
+  from {
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 0;
+    left: 0;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(0deg);
+    top: 50%;
+    left: 50%;
+  }
+}
+
+.logo {
+  height: 50px;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+/* Class for the logo animation */
+.logo-animate {
+  position: absolute;
+  animation: logo-move 2s forwards;
+}
+
+/* Keyframe for fading in the enroll button */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Keyframe for moving the span from right to left */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.enroll {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 10;
+}
+
+.enroll button {
+  animation: fadeIn 1.5s ease-in-out forwards;
+  padding: 10px 20px;
+  background-color: white;
+  color: #88b268;
+  border: 1px gray solid;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.enroll span {
+  animation: slideInFromRight 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  color: gray;
+}
+
+.enroll span.show {
+  visibility: visible;
+}
+
+.enroll button:hover {
+  background-color: #88b268;
+  color: white;
+}
+
+.dropdown {
+  position: absolute;
+  display: flex !important;
+  flex-direction: column;
+  align-items: start;
+  top: 10%;
+  right: 50%;
+  width: 25%;
+  background-color: black;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-50%);
+  transition: opacity 0.6s ease-in-out, visibility 0.6s ease-in-out,
+    transform 0.6s ease-in-out;
+}
+
+.enroll button:hover .dropdown {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown p {
+  margin: 0;
+  color: white;
+  padding: 2px;
+}
+.dropdown ul > li {
+  margin: 0;
+  padding: 1px;
+  color: white;
+}
+
+/* Keyframe for sliding up animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.form-section {
+  position: relative;
+  top: 15%;
+  animation: slideUp 1s ease-out forwards;
+  opacity: 0;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: 40px;
+}
+.form-section > p {
+  margin: 0 0 20px 0;
+  color: gray;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.input-container {
+  position: relative;
+  width: 65%;
+  margin-bottom: 15px;
+}
+
+.show-password-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #88b268;
+  display: none;
+  font-size: 0.9rem;
+}
+
+.show-password-button:hover {
+  text-decoration: underline;
+}
+
+input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  box-sizing: border-box;
+  font-size: 20px;
+  background: #fff;
+}
+
+input:focus {
+  outline: none;
+  border: 3px #88b268 solid;
+}
+
+label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  transform: translateY(-50%);
+  background: #fff;
+  box-sizing: border-box;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 25%;
+  left: 20px;
+  font-size: 12px;
+  color: #88b268;
+  background: #fff;
+  padding: 0 5px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.checkbox-label {
+  width: 120px;
+  margin-left: 2px;
+  font-size: 14px !important;
+  color: #000 !important;
+}
+
+#loginButton {
+  width: 65%;
+  position: relative;
+  padding: 20px;
+  background-color: rgb(225, 221, 221);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+#loginButton.active {
+  background-color: #88b268 !important;
+}
+
+#loginButton:hover {
+  background-color: #88b268;
+}
+#loginButton.active:hover {
+  background-color: #6aef05 !important;
+}
+
+/* Button text styles */
+.button-text {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  z-index: 1;
+}
+
+/* Loading circle styles */
+.loading-circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+/* Keyframes for loading circle spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Animation for showing loading circle and hiding text */
+.show-loading .button-text {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.show-loading .loading-circle {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #88b268;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: relative;
+  top: 30%;
+  margin-top: auto;
+  text-align: center;
+  font-size: 12px;
+  animation: slideUp 0.5s ease-out forwards;
+  color: #666;
+}
+
+/* Class to shrink the image */
+.shrink {
+  animation: shrink 2s forwards;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.image-section {
+  flex: 1;
+  background-color: white;
+}
+
+.image-section img {
+  border-radius: 8%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-section {
+    height: 300px;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
