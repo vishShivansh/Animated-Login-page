@@ -3,8 +3,7 @@
 A **modern and responsive login page** built using **HTML, CSS, and Vanilla JavaScript**.  
 It includes smooth animations, interactive form validation, loading animations, and a responsive layout.  
 
-![Demo Screenshot](./readmeimage.png)  
-*(Replace with your own screenshot / GIF demo of the project)*
+![Demo Screenshot](./readmeimage.png)
 
 ---
 
@@ -31,4 +30,4 @@ It includes smooth animations, interactive form validation, loading animations, 
 
 ### 1️⃣ Clone the repo
 ```bash
-git clone https://github.com/your-username/animated-login.git
+git clone https://github.com/vishShivansh/Animated-Login-page.git
