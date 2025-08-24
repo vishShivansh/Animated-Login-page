@@ -68,6 +68,13 @@ npx live-server
 👉 The project will open in your browser at:
 http://127.0.0.1:8080
 
+## 👨‍💻 Author  
+- Shivansh Gupta (vishShivansh)
+- [Portfolio](https://my-portfolio-shivansh-guptas-projects-acc2e36d.vercel.app)  
+- [GitHub](https://github.com/vishShivansh)  
+- [LinkedIn](https://www.linkedin.com/in/shivansh-gupta-54ba2a226)  
+- [Instagram](https://www.instagram.com/vish._shivansh) 
+
 ### Show your support
 
 Give a ⭐ if you like this website!
