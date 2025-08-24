@@ -34,9 +34,13 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/vishShivansh/Animated-Login-page.git
 cd Animated-Login-page
+```
 
 ### 2️⃣ Open in Live Server
 
 Run this command to start the project with auto-reload:
 ```bash
 npx live-server
+```
+👉 The project will open in your browser at:
+http://127.0.0.1:8080
