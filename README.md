@@ -28,6 +28,15 @@ It includes smooth animations, interactive form validation, loading animations, 
 
 ## 🚀 Getting Started
 
+Follow these steps to run the project locally:
+
 ### 1️⃣ Clone the repo
 ```bash
 git clone https://github.com/vishShivansh/Animated-Login-page.git
+cd Animated-Login-page
+
+### 2️⃣ Open in Live Server
+
+Run this command to start the project with auto-reload:
+```bash
+npx live-server
