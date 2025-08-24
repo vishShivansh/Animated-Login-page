@@ -16,7 +16,7 @@
         <h1 class="logo">LOGO</h1>
         <div class="enroll">
           <span>Are you a new customer?</span>
-          <button id="enrollButton">
+          <button id="enrollButton" type="button" aria-haspopup="true" aria-expanded="false">
             Enroll Now
             <div class="dropdown">
               <p>Enroll now to:</p>
@@ -29,11 +29,12 @@
           </button>
         </div>
       </div>
+
       <!-- Form starts here -->
       <div class="form-section">
         <h2>Welcome back</h2>
         <p>Sign in to your account</p>
-        <form id="loginForm">
+        <form id="loginForm" autocomplete="off">
           <div class="input-container">
             <input type="text" id="username" name="username" placeholder=" " required />
             <label for="username">Online ID</label>
@@ -60,19 +61,24 @@
           </div>
         </form>
       </div>
+
       <footer>
         <span>© 2025 SecureLogin Demo | vishShivansh</span> <br />
         <small>⚠️ Do not enter real credentials. This is for educational purposes only.</small>
       </footer>
-
     </div>
-    <!--  Image section -->
+
+    <!-- Image section -->
     <div class="image-section">
-      <img src="https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg"
-        alt="Login Image" />
+      <img 
+        src="https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg" 
+        alt="Login Image" 
+        referrerpolicy="no-referrer" 
+        loading="lazy" />
     </div>
   </div>
-  <script src="vanilla.js"></script>
-</body>
 
+  <!-- JS file with safe attributes -->
+  <script src="./vanilla.js" defer></script>
+</body>
 </html>
