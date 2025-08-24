@@ -5,6 +5,25 @@ It includes smooth animations, interactive form validation, loading animations, 
 
 ![Demo Screenshot](./readmeimage.png)
 
+<h3 align="center">
+    🔹
+    <a href="https://github.com/vishShivansh/Animated-Login-page/issues">Report Bug</a> &nbsp; &nbsp;
+    🔹
+    <a href="https://github.com/vishShivansh/Animated-Login-page/issues">Request Feature</a>
+</h3>
+
+### Connect With Me
+
+<p align="start">
+  <a href="https://www.linkedin.com/in/shivansh-gupta-54ba2a226" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  &nbsp;
+  <a href="https://www.instagram.com/vish._shivansh" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</p>
+
 ---
 
 ## ✨ Features
@@ -44,3 +63,9 @@ npx live-server
 ```
 👉 The project will open in your browser at:
 http://127.0.0.1:8080
+
+### Show your support
+
+Give a ⭐ if you like this website!
+
+[![GitHub stars](https://img.shields.io/github/stars/vishShivansh/Animated-Login-page?style=social)](https://github.com/vishShivansh/Animated-Login-page/stargazers)
