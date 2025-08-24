@@ -3,7 +3,7 @@
 A **modern and responsive login page** built using **HTML, CSS, and Vanilla JavaScript**.  
 It includes smooth animations, interactive form validation, loading animations, and a responsive layout.  
 
-![Demo Screenshot](https://img.freepik.com/free-photo/blue-house-with-blue-roof-sky-background_1340-25953.jpg)  
+![Demo Screenshot](./readmeimage.png)  
 *(Replace with your own screenshot / GIF demo of the project)*
 
 ---
